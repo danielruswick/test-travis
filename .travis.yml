@@ -6,7 +6,6 @@ os:
   - osx
 rvm:
   - 2.2
-  - jruby
 services:
     - docker
 before_install:

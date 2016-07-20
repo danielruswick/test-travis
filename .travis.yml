@@ -10,6 +10,7 @@ services:
 before_install:
   - docker pull hello-world
   - docker run hello-world
+  - bundle install
 install:
   - wget djru.github.io
   - cat index.html

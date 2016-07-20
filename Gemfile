@@ -2,4 +2,5 @@ source 'https://rubygems.org'
 
 gem 'httparty'
 gem 'passenger'
-gem 'rails'
+gem 'pg'
+gem 'redis'

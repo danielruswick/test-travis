@@ -7,6 +7,8 @@ rvm:
   - 2.2
 services:
     - docker
+    - postgresql
+    - redis-server
 before_install:
   - docker pull hello-world
   - docker run hello-world
@@ -14,3 +16,5 @@ before_install:
 install:
   - wget djru.github.io
   - cat index.html
+before_script:
+  - psql -c 'create database travis_ci_test;' -U postgres

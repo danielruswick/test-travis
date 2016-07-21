@@ -20,4 +20,3 @@ install:
   - cat index.html
 before_script:
   - psql -c 'create database travis_ci_test;' -U postgres
-  - redis-server
